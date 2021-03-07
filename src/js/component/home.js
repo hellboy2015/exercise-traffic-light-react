@@ -26,17 +26,21 @@ export function Home() {
 				id="myTrafficLight">
 				<div className="row justify-content-center">
 					<div
-						onClick={() => setColor("red")}
+						onClick={() => setColor(color == "red" ? "" : "red")}
 						className={redLight}></div>
 				</div>
 				<div className="row justify-content-center">
 					<div
-						onClick={() => setColor("yellow")}
+						onClick={() =>
+							setColor(color == "yellow" ? "" : "yellow")
+						}
 						className={yellowLight}></div>
 				</div>
 				<div className="row justify-content-center">
 					<div
-						onClick={() => setColor("green")}
+						onClick={() =>
+							setColor(color == "green" ? "" : "green")
+						}
 						className={greenLight}></div>
 				</div>
 			</div>
